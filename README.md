@@ -485,27 +485,32 @@ Our full unit and integration test suite remains unchanged since Milestone 3. Fo
 ### Demo
 1. **Plan Activity Form**  
    *Users suggest a specific time and location for their shared activity using this form*
-![activity_form](https://github.students.cs.ubc.ca/CPSC455-2025S/team01/assets/24710/f6c0576f-49f2-4d98-9d94-5ffd62f9dcb3)
+<img width="1919" height="958" alt="f6c0576f-49f2-4d98-9d94-5ffd62f9dcb3" src="https://github.com/user-attachments/assets/d4c0019f-27fc-44bb-8839-b5b970b33843" />
+
 
 2. **Swipe Dashboard**  
    *Users swipe on profile cards and create a match.*
-![swipe](https://github.students.cs.ubc.ca/CPSC455-2025S/team01/assets/24710/32c91254-af98-4bd6-8c67-c0d1c534aa05)
+![32c91254-af98-4bd6-8c67-c0d1c534aa05](https://github.com/user-attachments/assets/44d57203-f21b-4b0d-ab65-89e037f04fdf)
+
 
 3. **Chat Dashboard**  
    *Users propose a specific time and location for their shared activity directly within the chat interface and use pre-set messages for chatting*
-![chat_v2](https://github.students.cs.ubc.ca/CPSC455-2025S/team01/assets/24710/eb1ef6d1-c927-4045-92da-f8e0889f2e7b)
+<img width="1919" height="1079" alt="eb1ef6d1-c927-4045-92da-f8e0889f2e7b" src="https://github.com/user-attachments/assets/12908ddf-7a88-4d81-8d4d-16e2f7c850fc" />
+
 
 4. **ID Verification**  
    *Users upload a government-issued ID and a selfie. AWS Rekognition and Textract are used to verify authenticity, and a trust score is assigned after approval*
-![id_approval](https://github.students.cs.ubc.ca/CPSC455-2025S/team01/assets/24710/9acc07f1-dbe9-4c8d-b773-aafa2064d252)
+<img width="1919" height="1079" alt="9acc07f1-dbe9-4c8d-b773-aafa2064d252" src="https://github.com/user-attachments/assets/e5bbbe9a-522a-4eb7-ac75-feec31fb537d" />
+
 
 5. **Post-Date Rating Modal**  
    *After a confirmed date, users submit ratings on safety, behavior, and connection. These ratings impact the other user's safety score and badges*
-![rating](https://github.students.cs.ubc.ca/CPSC455-2025S/team01/assets/24710/3b25ffb5-f850-4a03-922a-5ef96b9b559e)
+<img width="1919" height="1079" alt="3b25ffb5-f850-4a03-922a-5ef96b9b559e" src="https://github.com/user-attachments/assets/ccf901ef-ddab-4d76-a281-1f4ce6ac15e0" />
+
 
 6. **Safety Score & Profile Badges**  
    *User profiles display a dynamic safety score, earned behavior badges, and social handles*
-![safety_score_in_profile](https://github.students.cs.ubc.ca/CPSC455-2025S/team01/assets/24710/0a192bd0-ebbf-47bf-837f-f8fb5d3218cd)
+<img width="1919" height="1079" alt="0a192bd0-ebbf-47bf-837f-f8fb5d3218cd" src="https://github.com/user-attachments/assets/48cbeea3-a51e-43bd-ad50-1b983b3f82ff" />
 
 
 ### M5 Highlights
