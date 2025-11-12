@@ -1,0 +1,175 @@
+.contact-info-overlay .safety-dialog {
+  background-color: #f5ede6;
+  border-radius: 20px;
+  width: 400px;
+  max-width: 98vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 24px 24px 20px 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  margin: 40px auto;
+  position: relative;
+  z-index: 1000000;
+  animation: modalSlideIn 0.4s ease-out;
+  transition: all 0.3s ease;
+}
+
+.contact-info-overlay .dialog-title {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #000;
+  padding: 16px 20px;
+  background-color: #c5cad4;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info-overlay .contact-info-warning {
+  color: #b77b00;
+  margin-bottom: 18px;
+  font-weight: 500;
+  font-size: 1.05em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-info-overlay .login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-info-overlay .login-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 0;
+}
+
+.contact-info-overlay .contact-info-input.large-input {
+  flex: 1;
+  max-width: 240px;
+  min-width: 100px;
+  height: 40px;
+  width: 240px;
+  padding: 4px 14px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  font-weight: 400;
+  color: #222;
+  text-align: left;
+}
+
+.contact-info-overlay .contact-info-input.large-input:focus {
+  outline: none;
+  border-color: #999;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+  transform: scale(1.02);
+}
+
+.contact-info-overlay .contact-info-input.large-input:hover {
+  border-color: #999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info-overlay input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  accent-color: #a6b49c;
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+.contact-info-overlay .dialog-btn.confirm {
+  background-color: #9cb4a0;
+  padding: 10px 20px; 
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  border: none; 
+  margin-top: 15px;
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+}
+
+
+.contact-info-overlay .dialog-btn.confirm:hover:not(:disabled) {
+  background-color: #648669;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info-overlay .dialog-btn.confirm:active {
+  transform: translateY(0px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info-overlay .dialog-btn.confirm:disabled {
+  color: #aaa;
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-overlay .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #222;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .contact-info-overlay .safety-dialog {
+    width: 98vw;
+    padding: 12px 4vw 18px 4vw;
+    max-height: 90vh;
+    border-radius: 16px;
+    margin: 30px 8px;
+  }
+  .contact-info-overlay .dialog-title {
+    font-size: 1.1em;
+    padding: 8px 4vw;
+  }
+  .contact-info-overlay .login-label {
+    font-size: 13px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    min-width: 90px;
+    width: auto;
+  }
+
+  .contact-info-overlay .dialog-btn.confirm {
+    font-size: 14px;
+    padding: 12px 20px;
+    width: 100%;
+    height: 48px;
+  }
+}

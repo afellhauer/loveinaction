@@ -1,0 +1,62 @@
+.account-settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.deactivate-account-section {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #fff5f5;
+    border: 1px solid #f5c2c2;
+}
+
+.section-divider {
+    margin-bottom: 1.5rem;
+    border-top: 1px solid #ddd;
+}
+
+.danger-zone-title {
+    font-size: 1.25rem;
+    color: #b02a37;
+    margin-bottom: 0.5rem;
+}
+
+.danger-zone-description {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    max-width: 600px;
+}
+
+.deactivate-button {
+    background-color: #fff;
+    border: 2px solid #b02a37;
+    color: #b02a37;
+    font-weight: 500;
+    padding: 0.6rem 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.deactivate-button:hover {
+    background-color: #b02a37;
+    color: #fff;
+}
+
+.password-confirmation {
+    margin-top: 1rem;
+}
+
+.password-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}

@@ -1,0 +1,280 @@
+.signup {
+  background-color: #f5ede6;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 40px 32px;
+  border-radius: 24px;
+  max-width: 500px;
+  margin: 60px auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.signup-title {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: #f7ceb5;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 24px 32px;
+  color: #000;
+  font-weight: 700;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.02em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.signup-field {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.signup-label {
+  background-color: #cbcfb5;
+  padding: 12px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  min-width: 80px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 500;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.signup-input {
+  flex: 1;
+  padding: 14px 18px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.signup-input:focus {
+  border-color: #8d9773;
+  box-shadow: 0 0 0 3px rgba(141, 151, 115, 0.1);
+  outline: none;
+}
+
+.signup-btn {
+  background-color: #9cb4a0;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 600;
+  color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 170px;
+  height: 50px;
+  min-width: 140px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.signup-btn.submit {
+  background-color: #9cb4a0;
+}
+
+.signup-btn.submit:disabled {
+  background-color: #e0e0e0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+  border-color: #cccccc;
+}
+
+.signup-btn.back {
+  background-color: #D6D3CE;
+}
+
+.signup-btn.submit:not(:disabled):hover {
+  background-color: #8a9e8f;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.signup-btn.back:hover {
+  background-color: #c2bdb5;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.signup-error {
+  color: #d32f2f;
+  background: rgba(255, 234, 234, 0.8);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  text-align: center;
+  border: 1px solid rgba(211, 47, 47, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  gap: 12px;
+  margin-top: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #333;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #8d9773;
+  cursor: pointer;
+}
+
+.signup-link-btn {
+  background: none;
+  border: none;
+  color: #8d9773;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 4px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.signup-link-btn:hover {
+  background-color: rgba(141, 151, 115, 0.1);
+  text-decoration: underline;
+}
+
+.signup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 32px;
+}
+
+.terms-link-btn {
+  background: none;
+  border: none;
+  color: #8d9773;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 4px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.terms-link-btn:hover {
+  background-color: rgba(141, 151, 115, 0.1);
+  text-decoration: underline;
+}
+
+.signupPage {
+  position: relative;
+  min-height: 100vh;
+}
+
+.password-requirements-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em 1.5em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.password-requirements-list li {
+  padding-left: 1.5em;
+  position: relative;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+.password-requirements-list li.valid {
+  color: #2ecc40;
+}
+
+.password-requirements-list li.valid::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+}
+
+.password-requirements-list li.invalid {
+  color: #ff4136;
+}
+
+.password-requirements-list li.invalid::before {
+  content: "❌";
+  position: absolute;
+  left: 0;
+}
+
+.password-requirements-title {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.password-mismatch-error {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 0.5em;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.password-match-success {
+  color: #2ecc40;
+  font-weight: bold;
+  margin-top: 0.5em;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.sanitized-toast {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fffbe6;
+  color: #b8860b;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 1em;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  z-index: 9999;
+  animation: fadeInOut 2s;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}

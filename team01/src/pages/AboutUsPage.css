@@ -1,0 +1,142 @@
+.about-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.about-us-content {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-us-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #a6b49c, #8d9773);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-us-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.founders-section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #a6b49c, #8d9773);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.founder-card {
+  text-align: center;
+  transition: transform 0.3s ease;
+  background: transparent;
+  border: none;
+  padding: 1rem;
+}
+
+.founder-card:hover {
+  transform: translateY(-5px);
+}
+
+.founder-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 4px solid #a6b49c;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px rgba(166, 180, 156, 0.3);
+}
+
+.founder-card:hover .founder-image {
+  transform: scale(1.1);
+  border-color: #8d9773;
+  box-shadow: 0 12px 35px rgba(166, 180, 156, 0.5);
+}
+
+.founder-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.founder-card:hover .founder-name {
+  color: #2c3e50;
+}
+
+.founder-role {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.founder-card:hover .founder-role {
+  color: #2c3e50;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 1rem;
+  }
+  
+  .about-us-content {
+    padding: 2rem;
+  }
+  
+  .about-us-title {
+    font-size: 2.5rem;
+  }
+  
+  .founders-section-title {
+    font-size: 2rem;
+  }
+  
+  .founders-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .mission-section {
+    padding: 2rem;
+  }
+  
+  .mission-title {
+    font-size: 1.8rem;
+  }
+}

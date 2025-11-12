@@ -1,0 +1,32 @@
+/* Extends the base modal: SafetyScore.css */
+.custom-time-picker {
+    height: 50px;
+    width: 100%;
+}
+
+
+.react-time-picker__wrapper {
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding-left: 20px;
+}
+
+
+.react-time-picker__inputGroup__input,
+.react-time-picker__inputGroup__minute,
+.react-time-picker__inputGroup__amPm {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.react-time-picker__inputGroup__input:focus,
+.react-time-picker__inputGroup__minute:focus,
+.react-time-picker__inputGroup__amPm:focus {
+    border-radius: 0 !important;
+    border: 1px solid #8d9773 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}

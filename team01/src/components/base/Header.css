@@ -1,0 +1,226 @@
+.header {
+    width: 100%;
+    background-color: #c5cad4;
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    position: relative;
+    z-index: 10;
+}
+
+.header-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    height: 100px;
+    justify-content: flex-start;
+
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    width: 250px;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-box:hover {
+    background-color: #b0b5bf;
+    cursor: pointer;
+}
+
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    height: auto;
+    width: 120px;
+    transition: transform 0.2s ease;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+}
+
+.side-by-side {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.hamburger:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.hamburger .bar {
+    width: 24px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+}
+
+.menu-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+.title-wrapper {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 16px 32px;
+    max-width: 100%;
+    text-align: center;
+    margin: 16px auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+    letter-spacing: -0.02em;
+}
+
+.title em {
+    font-style: italic;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #fff;
+    padding: 16px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.header-content:hover {
+    background-color: #e0e0e0;
+    transform: translateX(-4px);
+}
+
+.back-button {
+    background: none;
+    border: none;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.back-button:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.page-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+.profile-icon-btn {
+    background: none;
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    position: relative;
+}
+
+.profile-icon-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.profile-icon-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #b6bc9b;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.profile-icon-img.large {
+    width: 128px;
+    height: 128px;
+}
+.profile-icon-img.large:hover {
+    border-color: #8d9773;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    transform: scale(1.07);
+}
+
+.profile-icon-btn:hover .profile-icon-img {
+    border-color: #8d9773;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    transform: scale(1.07);
+}
+
+@media (max-width: 600px) {
+    .logo-container {
+        display: none;
+    }
+
+    .menu-box {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .header-bottom {
+        padding: 12px 20px;
+    }
+
+    .page-name {
+        font-size: 20px;
+    }
+}

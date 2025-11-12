@@ -1,0 +1,206 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #F5EDE6;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    box-shadow: 4px 0 32px rgba(0, 0, 0, 0.08);
+    border: none;
+}
+
+.sidebar.visible {
+    transform: translateX(0);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    padding: 20px 16px;
+    gap: 8px;
+}
+
+.nav-button {
+    background-color: #b6bc9b;
+    padding: 18px 24px;
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2c2c2c;
+    margin: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #8d9773;
+    color: #1a1a1a;
+    transform: translateX(3px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.nav-button.active {
+    background-color: #a5b094;
+    font-weight: 600;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    transform: translateX(2px);
+}
+
+.nav-button.active:hover {
+    background-color: #8d9773;
+    transform: translateX(3px);
+}
+
+.nav-button-back-mobile-only {
+    display: none;
+    background-color: #d6d3ce;
+    padding: 18px 24px;
+    text-align: center;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 12px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #2c2c2c;
+    margin: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    border: none;
+    letter-spacing: 0.3px;
+}
+
+.nav-button-back-mobile-only:hover {
+    background-color: #c2bdb5;
+    color: #1a1a1a;
+    transform: translateX(3px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logout-button {
+    background-color: #F7CEB5;
+    text-align: center;
+    padding: 18px 24px;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    bottom: 24px;
+    left: 16px;
+    right: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    border-radius: 12px;
+    color: #2c2c2c;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+}
+
+.logout-button:hover {
+    background-color: #E6AA85;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 0;
+    background-color: #c5cad4;
+    height: 110px;
+    border-bottom: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.logo-img {
+    max-width: 135px;
+    max-height: 95px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: 100vh;
+        transform: translateX(-100%);
+    }
+
+    .sidebar.visible {
+        transform: translateX(0);
+    }
+
+    .nav-button,
+    .logout-button {
+        font-size: 16px;
+        padding: 20px 24px;
+    }
+
+    .nav-buttons {
+        padding: 24px 20px;
+        gap: 12px;
+    }
+
+    .sidebar-logo {
+        height: 120px;
+        padding: 32px 0;
+    }
+
+    .logo-img {
+        max-width: 120px;
+        max-height: 85px;
+    }
+
+    .nav-button-back-mobile-only {
+        display: block;
+        margin: 0;
+        width: 100%;
+        padding: 20px 24px;
+        font-size: 16px;
+    }
+
+    .logout-button {
+        left: 20px;
+        right: 20px;
+        bottom: 32px;
+        padding: 20px 24px;
+        font-size: 16px;
+    }
+}

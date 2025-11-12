@@ -1,0 +1,80 @@
+.my-matches-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.matches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.match-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.match-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.match-activity {
+  margin-right: 0.5rem;
+}
+
+.match-details {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.match-status {
+  font-weight: 500;
+  color: #7b7b7b;
+}
+
+.trusted-contact-status {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.trusted-contact-shield {
+  margin-right: 4px;
+}
+
+.trusted-contact-status-green {
+  color: #65aa6d;
+  font-weight: 500;
+}
+
+.trusted-contact-status-red {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.trusted-contact-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notify-button {
+  font-weight: 400;
+  font-size: 0.9rem;
+
+}

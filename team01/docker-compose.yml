@@ -1,0 +1,35 @@
+services:
+  mongo:
+    image: mongo:6
+    container_name: love-in-action-mongo
+    platform: linux/amd64
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+
+  backend:
+    image: minoukh/team01-backend:finalrelease
+    container_name: love-in-action-backend
+    platform: linux/amd64
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongo
+    command: >
+      sh -c "
+        node scripts/seed.js &&
+        node server.js
+      "
+
+  frontend:
+    image: minoukh/team01-frontend:finalrelease
+    container_name: love-in-action-frontend
+    platform: linux/amd64
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongodata:

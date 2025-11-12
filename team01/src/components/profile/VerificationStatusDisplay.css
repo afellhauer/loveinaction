@@ -1,0 +1,203 @@
+/* VerificationStatusDisplay.css */
+.verification-status-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  flex: 1;
+}
+
+.verification-status-display:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.04);
+  transform: translateY(-1px);
+}
+
+.verification-status-display.verified {
+  background: linear-gradient(135deg, #f0fdf4 0%, #e8f8ed 100%);
+  border-color: rgba(34, 197, 94, 0.2);
+}
+
+.verification-status-display.rejected {
+  background: linear-gradient(135deg, #fef2f2 0%, #fde8e8 100%);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+.verification-status-display.pending {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.verification-status-display.loading {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-color: rgba(156, 180, 160, 0.2);
+}
+
+.verification-status-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.verification-status-icon {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.verification-status-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.verification-status-text {
+  font-weight: 600;
+  font-size: 14px;
+  color: #2c2c2c;
+  letter-spacing: 0.3px;
+}
+
+.verification-status-subtext {
+  font-size: 11px;
+  color: #666;
+  font-weight: 500;
+}
+
+.verification-status-subtext.error {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.verification-verify-btn {
+  background: linear-gradient(135deg, #9cb4a0 0%, #8aa88e 100%);
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(156, 180, 160, 0.25),
+    0 2px 4px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  min-width: 100px;
+}
+
+.verification-verify-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.verification-verify-btn:hover::before {
+  left: 100%;
+}
+
+.verification-verify-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(156, 180, 160, 0.3), 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.verification-verify-btn.retry {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25), 0 2px 4px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.verification-verify-btn.retry:hover {
+  box-shadow: 0 8px 16px rgba(239, 68, 68, 0.3), 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.verification-verified-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 20px;
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25), 0 2px 4px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.verification-verified-badge-icon {
+  font-size: 14px;
+}
+
+/* Loading animation */
+.verification-loading-text::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 2px solid #9cb4a0;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .verification-status-display {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+    padding: 16px;
+  }
+
+  .verification-status-info {
+    justify-content: center;
+  }
+
+  .verification-verify-btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  .verification-verified-badge {
+    justify-content: center;
+  }
+}

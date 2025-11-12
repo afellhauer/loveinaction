@@ -1,0 +1,50 @@
+.terms {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(60, 60, 60, 0.35);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms-dialog {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  padding: 32px 28px 24px 28px;
+  max-width: 420px;
+  width: 90vw;
+  position: relative;
+  z-index: 1001;
+}
+
+.terms-title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.terms-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  color: #888;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.terms-dialog p {
+  font-size: 1rem;
+  color: #222;
+  margin: 0;
+  line-height: 1.6;
+}

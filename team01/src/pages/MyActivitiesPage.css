@@ -1,0 +1,138 @@
+.my-activities-section {
+  margin-top: 3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-activities-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #2f2f2f;
+  text-align: center;
+}
+
+.activity-columns-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1000px;
+  overflow-y: auto;
+  max-height: 85vh;
+}
+
+.activity-column {
+  flex: 1 1 auto;
+  width: 520px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.activity-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 500px;
+  min-width: unset;
+  min-height: 150px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.activity-card:hover {
+  transform: translateY(-3px);
+}
+
+.activity-card strong {
+  font-weight: 600;
+}
+
+.past {
+  opacity: 0.65;
+  background-color: #f9f9f9;
+
+}
+
+.delete-button {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: crimson;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  transform: scale(1.2);
+  color: darkred;
+}
+
+.my-activities-loading,
+.my-activities-empty,
+.empty-sub {
+  font-size: 1.1rem;
+  color: #777;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 0.5rem;
+  column-gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.activity-grid-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.activity-section-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .activity-columns-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activity-column {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .activity-card {
+    width: 500px;
+    min-width: unset;
+    padding: 1rem;
+  }
+
+}
